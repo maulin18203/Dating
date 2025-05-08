@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Datify{% endblock %}
+
+{% block content %}
+<section class="page-header py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold">About Datify</h1>
+                <p class="lead text-muted">Our mission, values, and the team behind the magic</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="fw-bold mb-4">Our Story</h2>
+                <p>Datify was founded in 2023 with a simple mission: to reimagine online dating for a new generation. We noticed that traditional dating apps were missing something crucial—the ability to showcase personality authentically.</p>
+                <p>Our founder, after experiencing frustration with existing platforms, decided to create something different. Datify was born from the idea that finding meaningful connections should be both fun and genuine.</p>
+                <p>Today, Datify has helped thousands of people find meaningful relationships by combining the best aspects of dating apps with social media's creative expression.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://via.placeholder.com/600x400" alt="Datify Founders" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-12 text-center mb-4">
+                <h2 class="fw-bold">Our Values</h2>
+                <p class="lead">These core principles guide everything we do</p>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="value-card h-100 p-4 text-center">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Authenticity</h4>
+                    <p>We believe in real connections between real people. Our platform is designed to showcase the authentic you.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="value-card h-100 p-4 text-center">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Safety</h4>
+                    <p>Your security and privacy are paramount. We've built robust systems to create a safe environment for everyone.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="value-card h-100 p-4 text-center">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Inclusivity</h4>
+                    <p>Love is for everyone. We're committed to creating a platform where all people feel welcome and represented.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-12 text-center mb-4">
+                <h2 class="fw-bold">Meet Our Team</h2>
+                <p class="lead">The passionate individuals working to help you find love</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="img-fluid rounded-circle mb-3">
+                    <h5>Sarah Johnson</h5>
+                    <p class="text-muted">CEO & Founder</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Michael Chen" class="img-fluid rounded-circle mb-3">
+                    <h5>Michael Chen</h5>
+                    <p class="text-muted">CTO</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jessica Patel" class="img-fluid rounded-circle mb-3">
+                    <h5>Jessica Patel</h5>
+                    <p class="text-muted">Lead Designer</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card text-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Wilson" class="img-fluid rounded-circle mb-3">
+                    <h5>David Wilson</h5>
+                    <p class="text-muted">Head of Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h2 class="fw-bold text-primary display-4">10K+</h2>
+                <p class="text-muted">Happy Couples</p>
+            </div>
+            
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h2 class="fw-bold text-primary display-4">50+</h2>
+                <p class="text-muted">Countries</p>
+            </div>
+            
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h2 class="fw-bold text-primary display-4">1M+</h2>
+                <p class="text-muted">Users</p>
+            </div>
+            
+            <div class="col-md-3">
+                <h2 class="fw-bold text-primary display-4">4.8</h2>
+                <p class="text-muted">App Store Rating</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta py-5 text-center">
+    <div class="container">
+        <div class="cta-inner py-5">
+            <h2 class="display-5 fw-bold mb-4">Ready to Join Our Community?</h2>
+            <p class="lead mb-4">Create an account today and be part of our growing story.</p>
+            <a href="{{ url_for('main.register') }}" class="btn btn-primary btn-lg">Sign Up Now</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

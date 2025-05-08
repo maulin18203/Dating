@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Features - Datify{% endblock %}
+
+{% block content %}
+<section class="page-header py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-bold">Datify Features</h1>
+                <p class="lead text-muted">Discover all the innovative features that make Datify stand out</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features-section py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="h-100 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-3">Smart Matching Algorithm</h2>
+                    <p class="mb-4">Our sophisticated algorithm analyzes your preferences, behavior, and interactions to suggest compatible matches. The more you use the app, the better your matches become.</p>
+                    <ul class="feature-list">
+                        <li>Personality-based matching</li>
+                        <li>Interest compatibility analysis</li>
+                        <li>Behavioral pattern recognition</li>
+                        <li>Adaptive learning from your interactions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="Smart Matching" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        
+        <div class="row mb-5 flex-md-row-reverse">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="h-100 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-3">Video Reels</h2>
+                    <p class="mb-4">Express your authentic self through short, engaging video content. Reels provide a more dynamic way to showcase your personality than static photos alone.</p>
+                    <ul class="feature-list">
+                        <li>15-60 second vertical videos</li>
+                        <li>Creative filters and effects</li>
+                        <li>Music and sound integration</li>
+                        <li>Text overlay options</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="Video Reels" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="h-100 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-3">Enhanced Security</h2>
+                    <p class="mb-4">Your safety is our priority. Our verification system and privacy controls ensure you can focus on making meaningful connections in a secure environment.</p>
+                    <ul class="feature-list">
+                        <li>ID verification</li>
+                        <li>Photo verification checks</li>
+                        <li>Profile moderation</li>
+                        <li>Advanced privacy settings</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="Enhanced Security" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        
+        <div class="row mb-5 flex-md-row-reverse">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="h-100 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-3">Real-time Communication</h2>
+                    <p class="mb-4">Connect instantly with your matches through our seamless messaging platform. From text messages to video calls, we've got you covered.</p>
+                    <ul class="feature-list">
+                        <li>Instant messaging</li>
+                        <li>Video calling</li>
+                        <li>Media sharing</li>
+                        <li>Read receipts and typing indicators</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="Real-time Communication" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta py-5 text-center">
+    <div class="container">
+        <div class="cta-inner py-5">
+            <h2 class="display-5 fw-bold mb-4">Ready to Experience These Features?</h2>
+            <p class="lead mb-4">Create an account today and start your journey to meaningful connections.</p>
+            <a href="{{ url_for('main.register') }}" class="btn btn-primary btn-lg">Join Datify Now</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+
+{% block title %}Datify - Find Your Perfect Match{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-6 py-5">
+                <h1 class="display-4 fw-bold mb-4">Find Your Perfect Match with Datify</h1>
+                <p class="lead mb-4">Discover meaningful connections through our innovative dating platform that combines traditional dating with social media features.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="{{ url_for('main.register') }}" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="{{ url_for('main.features') }}" class="btn btn-outline-primary btn-lg">Learn More</a>
+                </div>
+                <div class="mt-4 d-flex align-items-center">
+                    <div class="d-flex">
+                        <div class="avatar-group">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="avatar" alt="User">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg" class="avatar" alt="User">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="avatar" alt="User">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="avatar" alt="User">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-0"><strong>10,000+</strong> successful matches</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="hero-image">
+                    <img src="{{ url_for('static', filename='img/hero-image.png') }}" alt="Datify App" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Why Choose Datify?</h2>
+            <p class="lead text-muted">Discover what makes our platform stand out from the rest</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h4>Smart Matching</h4>
+                    <p>Our advanced algorithm suggests compatible matches based on your preferences and behavior.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h4>Video Reels</h4>
+                    <p>Express your personality through short videos that showcase who you really are.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Verified Profiles</h4>
+                    <p>Feel secure with our verification system ensuring authentic connections.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card h-100">
+                    <div class="icon-box mb-3">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h4>Real-time Chat</h4>
+                    <p>Connect instantly with your matches through our seamless messaging platform.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('main.features') }}" class="btn btn-outline-primary">Explore All Features</a>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">How Datify Works</h2>
+            <p class="lead text-muted">Three simple steps to find your perfect match</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="step-card text-center h-100">
+                    <div class="step-number">1</div>
+                    <h4 class="mt-4">Create Your Profile</h4>
+                    <p>Sign up and customize your profile with photos, videos, and personal information.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="step-card text-center h-100">
+                    <div class="step-number">2</div>
+                    <h4 class="mt-4">Discover Matches</h4>
+                    <p>Browse through potential matches based on your preferences and interests.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="step-card text-center h-100">
+                    <div class="step-number">3</div>
+                    <h4 class="mt-4">Connect & Meet</h4>
+                    <p>Start conversations with your matches and arrange to meet in person.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Success Stories</h2>
+            <p class="lead text-muted">Hear from couples who found love on Datify</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-image mb-3">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah J." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Datify changed my life! After a few weeks on the app, I matched with Michael. We've been together for 2 years now and recently got engaged!"</p>
+                        <p class="testimonial-author fw-bold mb-0">Sarah J., 28</p>
+                        <p class="testimonial-location text-muted">New York, NY</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-image mb-3">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David L." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was skeptical about dating apps, but the video feature on Datify really helped me show my personality. I met Jessica and we instantly connected!"</p>
+                        <p class="testimonial-author fw-bold mb-0">David L., 34</p>
+                        <p class="testimonial-location text-muted">Chicago, IL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-image mb-3">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anna T." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The verification feature made me feel safe. I knew I was talking to real people. Six months later, I found my boyfriend Mark and couldn't be happier!"</p>
+                        <p class="testimonial-author fw-bold mb-0">Anna T., 26</p>
+                        <p class="testimonial-location text-muted">Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('main.testimonials') }}" class="btn btn-outline-primary">Read More Stories</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta py-5 text-center">
+    <div class="container">
+        <div class="cta-inner py-5">
+            <h2 class="display-5 fw-bold mb-4">Ready to Find Your Perfect Match?</h2>
+            <p class="lead mb-4">Join thousands of singles who have found meaningful connections on Datify.</p>
+            <a href="{{ url_for('main.register') }}" class="btn btn-primary btn-lg">Create Account</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
